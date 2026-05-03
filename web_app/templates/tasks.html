@@ -1,0 +1,32 @@
+{% extends 'base.html' %} 
+
+{% block container %}
+<h2>Your Tasks</h2>
+<ul class="task-list">
+    {% for task in tasks %}
+    <li class="task-card">
+        <strong>{{ task.task_title }}</strong> (User: {{ task.user_id }})<br>
+        Due: {{ task.date }} | Frequency: {{ task.reminder_frequency }}
+        
+        <hr>
+        <!-- UPDATE FORM -->
+        <form action="{{ url_for('update_task', task_id=task._id) }}" method="POST" style="display:inline-block;">
+            <input type="hidden" name="user_id" value="{{ task.user_id }}">
+            <input type="text" name="task_title" value="{{ task.task_title }}" required>
+            <input type="date" name="date" value="{{ task.date }}" required>
+            <select name="reminder_frequency">
+                <option value="daily" {% if task.reminder_frequency == 'daily' %}selected{% endif %}>Daily</option>
+                <option value="weekly" {% if task.reminder_frequency == 'weekly' %}selected{% endif %}>Weekly</option>
+                <option value="monthly" {% if task.reminder_frequency == 'monthly' %}selected{% endif %}>Monthly</option>
+            </select>
+            <button type="submit">Update</button>
+        </form>
+        
+        <!-- DELETE FORM -->
+        <form action="{{ url_for('delete_task', task_id=task._id) }}" method="POST" style="display:inline-block;">
+            <button type="submit">Delete</button>
+        </form>
+    </li>
+    {% endfor %}
+</ul>
+{% endblock %}

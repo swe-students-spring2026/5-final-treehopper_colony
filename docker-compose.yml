@@ -1,0 +1,19 @@
+version: "3.8"
+services:
+  # 1. Web App Subsystem
+  web_app:
+    build: ./web_app
+    ports:
+      - "5004:5004"
+    env_file:
+      - ./web_app/.env
+    depends_on:
+      - db
+
+  # 2. MongoDB Database Subsystem
+  db:
+    image: mongo:latest
+    ports:
+      - "27017:27017"
+    volumes:
+      - ./db_data:/data/db

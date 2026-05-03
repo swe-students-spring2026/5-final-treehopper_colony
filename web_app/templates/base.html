@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Basic Task App</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Task Manager</h1>
+        <nav>
+            <a href="/login">Login</a> | 
+            <a href="/">View Tasks</a> | 
+            <a href="/create">Create Task</a>
+        </nav>
+        <hr>
+        
+        <!-- Unique page content will be injected here -->
+        {% block container %} 
+        {% endblock %}
+    </div>
+</body>
+</html>

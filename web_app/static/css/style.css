@@ -1,0 +1,93 @@
+/* Use Flexbox to perfectly center the app on the screen */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f2f5;
+    margin: 0;
+    display: flex;
+    justify-content: center; 
+    padding-top: 50px;
+}
+
+/* Create a clean, white card for your app content */
+.container {
+    width: 100%;
+    max-width: 550px;
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2 {
+    text-align: center;
+    color: #333;
+}
+
+/* Style the navigation menu */
+nav {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #007bff;
+    font-weight: bold;
+    margin: 0 10px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Make the forms look clean and spaced out */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+input, select, button {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+/* Format the task list cards */
+.task-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.task-card {
+    border: 1px solid #eee;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    background-color: #fafafa;
+}
+
+/* Make update and delete buttons display next to each other */
+.task-card form {
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.task-card button {
+    padding: 5px 10px;
+    font-size: 14px;
+    margin-right: 5px;
+}
