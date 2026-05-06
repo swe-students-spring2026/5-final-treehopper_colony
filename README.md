@@ -23,8 +23,8 @@ A task reminder platform that allows users to register, login, create tasks, and
 
 ## Docker Hub Links (PLACEHOLDER)
 
-- [Web App](https://hub.docker.com/r/your-username/treehopper-web-app)
-- [Reminder Worker](https://hub.docker.com/r/your-username/treehopper-reminder-worker)
+- [Web App](https://hub.docker.com/repository/docker/csl9997/reminder-web/general)
+- [Reminder Worker](https://hub.docker.com/repository/docker/csl9997/reminder-worker/general)
 
 ## Local Development Setup
 
