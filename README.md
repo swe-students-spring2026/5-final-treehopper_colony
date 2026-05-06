@@ -1,4 +1,4 @@
-# Treehopper Colony Task Reminder System
+# Treehopper Colony's Task Reminder System
 
 [![.github/workflows/web-app-ci.yml](https://github.com/swe-students-spring2026/5-final-treehopper_colony/actions/workflows/web-app-ci.yml/badge.svg)](https://github.com/swe-students-spring2026/5-final-treehopper_colony/actions/workflows/web-app-ci.yml)
 
@@ -14,6 +14,7 @@ A task reminder platform that allows users to register, login, create tasks, and
 - [Carolina Lee](https://github.com/CarolLee04)
 - [Jeffrey Solano](https://github.com/jeffnoso)
 - [Uwa Igbinedion](https://github.com/uwa00)
+- [Ed Ye](https://github.com/EdwarddYe)
 
 ## Features
 
