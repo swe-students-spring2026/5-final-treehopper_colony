@@ -32,7 +32,7 @@ jobs:
           PYTHONPATH=. pipenv run pytest --cov=. --cov-report=term-missing tests/
   deliver:
     runs-on: ubuntu-latest
-    needs: build # Change this to 'test' if you renamed your first job
+    needs: test
     if: github.event_name == 'push'
     steps:
       - uses: actions/checkout@v3
