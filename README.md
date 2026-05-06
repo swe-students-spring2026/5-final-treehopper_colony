@@ -21,7 +21,7 @@ A task reminder platform that allows users to register, login, create tasks, and
 - **Reminder Worker**: Automated background service that sends reminders based on task schedules.
 - **MongoDB Integration**: Persistent storage for users, tasks, and reminder data.
 
-## Docker Hub Links (PLACEHOLDER)
+## Docker Hub Links
 
 - [Web App](https://hub.docker.com/repository/docker/csl9997/reminder-web/general)
 - [Reminder Worker](https://hub.docker.com/repository/docker/csl9997/reminder-worker/general)
